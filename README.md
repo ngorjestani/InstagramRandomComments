@@ -11,7 +11,7 @@ Before you begin, ensure you have met the following requirements:
 First, clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/
+git clone https://github.com/ngorjestani/InstagramRandomComments.git
 ```
 
 ## Running the Project
