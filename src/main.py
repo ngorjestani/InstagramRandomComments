@@ -40,7 +40,7 @@ def main():
     post = Post.from_shortcode(ig.context, shortcode)
 
     print("\nGetting comments...")
-    comments = post.get_comments()
+    comments = list(post.get_comments())
 
     valid = False
     number = 0
@@ -53,7 +53,7 @@ def main():
             valid = True
 
     print("\nSelecting " + str(number) + " random comments...")
-    two_random_comments = get_random_list_items(list(comments), number)
+    two_random_comments = get_random_list_items(comments, number)
 
     for comment in two_random_comments:
         print(comment.owner.username + ": " + comment.text)
